@@ -6,4 +6,4 @@ class HitSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hit
         fields = ('created', 'id', 'triggered_by',
-                  'area', 'note', 'rank', 'meds')
+                  'area', 'note', 'rank', 'meds', 'owner')

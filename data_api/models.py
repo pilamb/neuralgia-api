@@ -35,6 +35,7 @@ class Hit(models.Model):
                                            MaxValueValidator(10)]
                                )
     meds = models.BooleanField(default=False)
-
+    owner = models.ForeignKey('auth.User', related_name='pains',
+                              on_delete=models.CASCADE)
     class Meta:
         ordering = ('created',)
