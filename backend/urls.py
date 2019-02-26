@@ -8,7 +8,9 @@ router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path(r'silk/', include('silk.urls', namespace='silk')),
     path('users-auth/',
          include('rest_framework.urls', namespace='rest_framework')),
     path('', include('data_api.urls'))
 ]
+
