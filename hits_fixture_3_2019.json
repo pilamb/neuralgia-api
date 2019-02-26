@@ -1,0 +1,41 @@
+[
+{
+    "model": "data_api.hit",
+    "pk": 1,
+    "fields": {
+        "created": "2019-02-26T18:23:19.516Z",
+        "triggered_by": "eating",
+        "area": "VL3",
+        "note": "note1",
+        "rank": 5,
+        "meds": true,
+        "owner": 1
+    }
+},
+{
+    "model": "data_api.hit",
+    "pk": 2,
+    "fields": {
+        "created": "2019-02-26T18:23:36.303Z",
+        "triggered_by": "eating",
+        "area": "VL3",
+        "note": "note2",
+        "rank": 10,
+        "meds": true,
+        "owner": 1
+    }
+},
+{
+    "model": "data_api.hit",
+    "pk": 3,
+    "fields": {
+        "created": "2019-02-26T18:24:10.854Z",
+        "triggered_by": "brush teeth",
+        "area": "VR2",
+        "note": "note3",
+        "rank": 1,
+        "meds": false,
+        "owner": 1
+    }
+}
+]
