@@ -1,17 +1,19 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 
-from data_api.models import Hit
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    pains = serializers.PrimaryKeyRelatedField(many=True,
-                                               queryset=Hit.objects.all())
+class UserSerializer(serializers.ModelSerializer):
+    pains = serializers.HyperlinkedRelatedField(many=True,
+                                               read_only=True,
+                                               view_name="hit-detail",
+                                               lookup_field="pk")
+    #pains = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'groups', 'pains')
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
-        class Meta:
-            model = Group
-            fields = ('url', 'name')
+    class Meta:
+        model = Group
+        fields = ('url', 'name')
