@@ -39,3 +39,8 @@ class Hit(models.Model):
                               on_delete=models.CASCADE)
     class Meta:
         ordering = ('created',)
+
+    def __str__(self):
+        return " %s owner on area %s with a rank of a %s on %s " \
+               "created triggered_by %s" % (self.owner, self.area, self.rank,
+                                            self.created, self.triggered_by)
