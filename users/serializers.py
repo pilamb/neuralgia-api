@@ -2,13 +2,11 @@ from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 
 
-
 class UserSerializer(serializers.ModelSerializer):
     pains = serializers.HyperlinkedRelatedField(many=True,
                                                read_only=True,
                                                view_name="hit-detail",
                                                lookup_field="pk")
-    #pains = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'groups', 'pains')
