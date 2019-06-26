@@ -59,7 +59,7 @@ Or by appending a format suffix:
 
 `http --json POST http://127.0.0.1:8000/hits/` note="example" area="VR1"
 
-Type `httpie -v for more help.
+Type `httpie -v` for more help.
 
 An example of a response in JSON format:
 
@@ -81,7 +81,7 @@ An example of a response in JSON format:
 
 Can be found at data/api/tests.
 
-Run them with
+Run them with `coverage run --source="./data_api" manage.py test data_api && coverage report`
 
 #### ToDos:
 
