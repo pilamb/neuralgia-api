@@ -16,3 +16,4 @@ class HiTest(TestCase):
                            rank=5, meds=True, owner=self.user_instance)
         self.assertIsInstance(self.user_instance, User)
         self.assertIsInstance(hit, Hit)
+        self.assertEqual(Hit.objects.count(), 1)
