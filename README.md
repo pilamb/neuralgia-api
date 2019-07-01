@@ -31,7 +31,11 @@ Make a virtualenv or a docker and then in the command line:
 
 #### Usage
 
-Users need to be registered
+The project *won't run* if SECRET_KEY is not set to a value in the settings.py file.
+You can set it to a random value.
+
+Users need to be registered, for now, as superusers.
+
 In the settings set the secret_key value to something or Django won't run.
 
 Visit the home url with a browser or try this on a command shell:
@@ -85,8 +89,9 @@ Run them with `coverage run --source="./data_api" manage.py test data_api && cov
 
 #### ToDos:
 
+0. Users separated app
 1. A front client, desirable Vue.js
-2. A mobile client
+2. A mobile client, flutter?
 3. Graphs, maybe 3DS or HighCharts. Timelines are interesting
 
 
