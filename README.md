@@ -5,7 +5,7 @@ What is this for
 
 This software aims to help with [**trigeminal neuralgia disorder**](https://www.ninds.nih.gov/Disorders/Patient-Caregiver-Education/Fact-Sheets/Trigeminal-Neuralgia-Fact-Sheet) but it can be extended to other persistent pain neuropathies.
 
-Every time a neuralgia patient has pain it can be registered via app with parameters such as date and time, how painful it was in a rank of 1 to 10, if meds have been taken or not and the area.
+Every time a neuralgia patient has pain it can be registered via app/API with parameters such as date and time, how painful it was in a rank of 1 to 10, if meds have been taken or not and the area.
 Notes can also be added to complement the context: "I took the meds 2 hours ago", "while eating", "while using floss".
 
 Patients can show their specialist doctor the data gathered, study the impact of external factors, see timelines, etc.
@@ -14,9 +14,7 @@ With all this inside a database students, Doctors, investigators and so can use 
 
 ### Made with
 
-:snake:
-
-Python3.7, Django 2.1 and DjangoREST 3.9.1
+:snake:  Python3.7, Django 2.1 and DjangoREST 3.9.1
 
 Prepared for a "db.sqlite3" database.
 
@@ -89,10 +87,11 @@ Run them with `coverage run --source="./data_api" manage.py test data_api && cov
 
 #### ToDos:
 
-0. Users separated app
+0. Users separated app -> Oauth desirable
 1. A front client, desirable Vue.js
 2. A mobile client, flutter?
-3. Graphs, maybe 3DS or HighCharts. Timelines are interesting
+3. When so is done, the API should also register extra phone parameteres
+4. Graphs, maybe 3DS or HighCharts. Timelines are interesting
 
 
 After:
