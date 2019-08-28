@@ -17,7 +17,6 @@ jedi==0.13.3
 Jinja2==2.10
 MarkupSafe==1.1.1
 mock==2.0.0
-mock-django-0.6.10
 parso==0.3.4
 pbr==5.1.2
 pexpect==4.6.0
