@@ -81,7 +81,9 @@ An example of a response in JSON format:
 
 #### Tests
 
-Can be found at data/api/tests.
+Can be found at data/api/tests folder.
+
+Usin Travis for CI.
 
 Run them with `coverage run --source="./data_api" manage.py test data_api && coverage report`
 
