@@ -9,7 +9,7 @@ coverage==4.5.2
 django-extensions==2.1.6
 django-silk==3.0.1
 gprof2dot==2016.10.13
-httpie==1.0.2
+httpie==1.0.3
 idna==2.8
 ipython==7.3.0
 ipython-genutils==0.2.0
